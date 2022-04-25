@@ -1,8 +1,16 @@
-export function Navbar() {
+import { Link } from "react-router-dom";
+import "./NavBar.css"
+
+
+export function NavBar() {
     return ( 
-        <div>
-            Aqui será nossa NavBAr de pesquisa 
-        </div>
+        <nav className="NavBar">
+
+           <Link to="/cadastro" ><button> Cadastro </button></Link>
+           <Link to="/login" ><button> Login </button></Link>
+           <p>oi</p>
+
+        
+        </nav>
      );
 }
-
