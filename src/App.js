@@ -1,6 +1,8 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { NavBar } from './components/NavBar/NavBar';
+import {Home} from "./pages/Home/Home"
+import {Product} from "./pages/Product/Product"
 import { useState, useEffect } from "react"
 import axios from 'axios';
 import { Login } from './components/NavBar/Login/Login';
@@ -37,10 +39,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <NavBar filterState={filterItems}/>
-          <Routes>
-            <Route path='/'/>
-            <Route path='/cadastro' element={<Cadastro />}/>
-            <Route path='/login' element={<Login />}/>
+        <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/produto/:prod" element={<Product/>}/>
+        <Route path='/cadastro' element={<Cadastro />}/>
+        <Route path='/login' element={<Login />}/>
         </Routes>
       </BrowserRouter>
     </div>
