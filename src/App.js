@@ -7,6 +7,7 @@ import { useState, useEffect } from "react"
 import axios from 'axios';
 import { Login } from './components/NavBar/Login/Login';
 import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
+import { FiltredHome} from './pages/FilteredHome/FilteredHome'
 import { UserPage } from './pages/UserPage/UserPage';
 
 function App() {
@@ -41,11 +42,12 @@ function App() {
       <BrowserRouter>
       <NavBar filterState={filterItems}/>
         <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/produto/:prod" element={<Product/>}/>
-        <Route path='/cadastro' element={<Cadastro />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/userpage' element={<UserPage />} />
+            <Route path='/filtredHome' element={<FiltredHome itens={itens}/>}/>
+            <Route path="/" element={<Home/>} />
+            <Route path="/produto/:prod" element={<Product/>}/>
+            <Route path='/cadastro' element={<Cadastro />}/>
+            <Route path='/login' element={<Login />}/>
+            <Route path='/userpage' element={<UserPage />} />
         </Routes>
       </BrowserRouter>
     </div>

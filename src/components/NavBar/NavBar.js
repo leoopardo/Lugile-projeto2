@@ -1,11 +1,16 @@
 import "./NavBar.css"
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 export function NavBar(props) {
+    const navigate = useNavigate()
+    function handleSubmit(e){
+        e.preventDefault();
+        navigate("/filtredHome")
+    }
     return ( 
         <nav className="NavBar">
             <div className="SearchBar">
-                <form className="FormSearchBar">
+                <form className="FormSearchBar" onSubmit={handleSubmit}>
                     <input 
                         type="text"
                         className="SearchBar"   
@@ -13,11 +18,12 @@ export function NavBar(props) {
                         onKeyUp={(e) => {props.filterState(e.target.value)
                         }}
                     />
+                    <Link to="/filtredHome"><button></button></Link>
                 </form>        
             </div>
             <div className="user">
                 <Link to="/cadastro" ><button> Cadastro </button></Link>
-                <Link to="/login" ><button> Login </button></Link>
+                <button> Login </button>
             </div>    
         </nav>
     
