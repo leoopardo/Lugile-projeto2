@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import axios from 'axios';
 import { Login } from './components/NavBar/Login/Login';
 import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
+import { FiltredHome} from './pages/FilteredHome/FilteredHome'
 
 function App() {
   const [itens, setItens] = useState([])
@@ -37,8 +38,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <NavBar filterState={filterItems}/>
+    
           <Routes>
             <Route path='/'/>
+            <Route path='/filtredHome' element={<FiltredHome itens={itens}/>}/>
             <Route path='/cadastro' element={<Cadastro />}/>
             <Route path='/login' element={<Login />}/>
         </Routes>
