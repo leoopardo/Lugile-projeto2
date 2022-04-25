@@ -3,6 +3,7 @@
     margin: 1% 1% 1% 1%;
     background-color: #A404BE;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 .SearchBar{
