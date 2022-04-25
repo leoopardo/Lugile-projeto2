@@ -7,6 +7,7 @@ import { useState, useEffect } from "react"
 import axios from 'axios';
 import { Login } from './components/NavBar/Login/Login';
 import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
+import { UserPage } from './pages/UserPage/UserPage';
 
 function App() {
   const [itens, setItens] = useState([])
@@ -44,6 +45,7 @@ function App() {
         <Route path="/produto/:prod" element={<Product/>}/>
         <Route path='/cadastro' element={<Cadastro />}/>
         <Route path='/login' element={<Login />}/>
+        <Route path='/userpage' element={<UserPage />} />
         </Routes>
       </BrowserRouter>
     </div>
