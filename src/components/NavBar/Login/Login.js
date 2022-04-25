@@ -1,14 +1,11 @@
+import { Link } from "react-router-dom";
 
 export function Login() {
   
         return ( 
 
 
-            <div id="myModal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close"></span>
-
-                
+        <div>               
                 <input 
                     name="name"
                     type="text"
@@ -21,13 +18,13 @@ export function Login() {
                     placeholder="senha"
                 /> 
                 
-                 <button>Login</button>
+               <Link  to="/userpage" > <button>Login</button> </Link>
+ 
+        </div>
+         
 
-                 </div>
-        </div>  
         )
-    }
-
+    };
     
                 
 
