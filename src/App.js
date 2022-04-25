@@ -3,8 +3,8 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { NavBar } from './components/NavBar/NavBar';
 import { useState, useEffect } from "react"
 import axios from 'axios';
-import { Cadastro } from './Components/Navbar/Cadastro/Cadastro';
-import { Login } from './Components/Navbar/Login/Login';
+import { Login } from './components/NavBar/Login/Login';
+import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
 
 function App() {
   const [itens, setItens] = useState([])
@@ -39,7 +39,7 @@ function App() {
       <NavBar filterState={filterItems}/>
           <Routes>
             <Route path='/'/>
-            <Route path='/cadastro' element={<Cadastro/>}/>
+            <Route path='/cadastro' element={<Cadastro />}/>
             <Route path='/login' element={<Login />}/>
         </Routes>
       </BrowserRouter>
