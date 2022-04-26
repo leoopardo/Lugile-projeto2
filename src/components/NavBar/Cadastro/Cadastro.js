@@ -7,6 +7,7 @@ export function Cadastro() {
     const [cadastro, setCadastro] = useState({
         name: "",
         password: "",
+        carrinho: [],
     })
 
     function handleChange(e){
@@ -19,6 +20,8 @@ export function Cadastro() {
          await axios.post("https://ironrest.herokuapp.com/Lugile-usuários", cadastro)
 
         navigate("/login");
+        window.location.refresh()
+
     }
     return ( 
         <form onSubmit={handleSubmit} >
