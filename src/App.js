@@ -1,10 +1,11 @@
 import './App.css';
+import axios from 'axios';
+
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { NavBar } from './components/NavBar/NavBar';
 import {Home} from "./pages/Home/Home"
 import {Product} from "./pages/Product/Product"
 import { useState, useEffect } from "react"
-import axios from 'axios';
 import { Login } from './components/NavBar/Login/Login';
 import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
 import { FiltredHome} from './pages/FilteredHome/FilteredHome'

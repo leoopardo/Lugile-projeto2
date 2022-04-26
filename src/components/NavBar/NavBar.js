@@ -1,5 +1,5 @@
 import "./NavBar.css"
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function NavBar(props) {
     const navigate = useNavigate()
@@ -23,7 +23,7 @@ export function NavBar(props) {
             </div>
             <div className="user">
                 <Link to="/cadastro" ><button> Cadastro </button></Link>
-                <button> Login </button>
+                <Link to="/login" ><button> Login </button></Link>
             </div>    
         </nav>
     
