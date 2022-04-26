@@ -48,7 +48,7 @@ function App() {
             <Route path="/produto/:prod" element={<Product/>}/>
             <Route path='/cadastro' element={<Cadastro />}/>
             <Route path='/login' element={<Login />}/>
-            <Route path='/userpage' element={<UserPage />} />
+            <Route path='/userpage/:id' element={<UserPage />} />
         </Routes>
       </BrowserRouter>
     </div>
