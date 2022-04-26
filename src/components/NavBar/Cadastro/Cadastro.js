@@ -18,7 +18,7 @@ export function Cadastro() {
 
          await axios.post("https://ironrest.herokuapp.com/Lugile-usuários", cadastro)
 
-        navigate("/");
+        navigate("/login");
     }
     return ( 
         <form onSubmit={handleSubmit} >
