@@ -7,6 +7,8 @@ export function NavBar(props) {
         e.preventDefault();
         navigate("/filtredHome")
     }
+    
+    
     return ( 
         <nav className="NavBar">
             <div className="SearchBar">
@@ -17,8 +19,10 @@ export function NavBar(props) {
                         placeholder= "pesquise"
                         onKeyUp={(e) => {props.filterState(e.target.value)
                         }}
+
+                        
                     />
-                    <Link to="/filtredHome"><button></button></Link>
+                    <button>search</button>
                 </form>        
             </div>
             <div className="user">
