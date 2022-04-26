@@ -6,7 +6,11 @@ export function UserPage() {
     const params = useParams();
     const [produtos, setProdutos] = useState([]);
     const [login, setLogin] = useState([]);
-    const [allProducts, setAllProducts] = useState([]);
+    const [allProducts, setAllProducts] = useState({
+        name: "",
+        password:"",
+        carrinho: {}
+    });
     
     
     
@@ -32,14 +36,7 @@ export function UserPage() {
         fetchProdutos();
     }, [] );
 
-// function clickHandleCarrinho(){
-        //const carrinhoData = {...login};
 
-        //axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`), {carrinho: login.carrinho}
-
-        //for(let i = 0; i<login.length; i++){}
-
-    //}
    
     
     return ( 
@@ -49,15 +46,16 @@ export function UserPage() {
                 {produtos.map((currentProduto) => {
                     return (
                         <>
-                            <li>
+                            <li key={currentProduto.id}>
                                 <h1>{currentProduto.title}</h1>
                                 <img src={currentProduto.image} alt={currentProduto.title}/>
                                 <p>{currentProduto.title}</p>
                                 <p> Preço: ${currentProduto.price}</p>
-                                <button onClick={(event)=> {
-                                    setAllProducts({...allProducts, [event.target.carrinho]: currentProduto })
-                                    console.log(allProducts)
-                                    axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, {carrinho: allProducts })}}> Carrinho </button>
+                                
+                                <button onClick={((event) => {const carrinhoData = {...allProducts};
+                                carrinhoData.carrinho.push(currentProduto);
+                                setAllProducts(carrinhoData);
+                                console.log(carrinhoData)})}> Carrinho </button>
                             </li>
                         </>
                     );
