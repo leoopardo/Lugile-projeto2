@@ -1,0 +1,28 @@
+.todos{
+    color: white;
+    background-color: #680179;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.productTitle{
+    font-size: 15px;
+}
+.productImg{
+    height: 100px;
+}
+.loja{
+    margin-left: 2%;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.iten{
+    color: #680179;
+    background-color: white;
+    width: 300px;
+    margin: 1%;
+    border: 1px solid black;
+    border-radius: 5%;
+}
