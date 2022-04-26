@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container {
+    max-width: 74vw;
+}
+.container .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.container .carousel .item {
+    background-color: white;
+    flex: none;
+    padding: 10px;
+    width: 280px;
+    border-radius: 16px;
+}
+.container .carousel .item .image img{
+    width: 260px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.container .carousel .item .info {
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .carousel .item .info span {
+    display: block;
+    text-align: center;
+    color: #1e1e1e;
+    padding: 5px;
+    border-radius: 10px;
+   
+}
+
+.container .carousel .item .info .title {
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin: 10px 0;
+    
+}
+.container .carousel .item .info .price {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+.container .buttons{
+    width: 100%;
+    text-align: center;
+}
+.container .buttons button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container .buttons button:first-child img {
+    transform: rotate(180deg);
+}
+
+.container .carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.buttonsSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.btnStyle {
+    background-color: blueviolet;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    font-weight: bold;
+}
