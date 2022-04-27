@@ -9,6 +9,7 @@ import { Login } from './components/NavBar/Login/Login';
 import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
 import { FiltredHome} from './pages/FilteredHome/FilteredHome'
 import { UserPage } from './pages/UserPage/UserPage';
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import { Perfil } from './pages/Perfil/Perfil';
 
 function App() {
@@ -29,7 +30,6 @@ function App() {
       setItens(backUp);
       return;
     }
-
     const filtred = itens.filter((currentItem) => {
       return (currentItem.title || currentItem.description || currentItem.category)
       .toLowerCase()
@@ -43,12 +43,12 @@ function App() {
       <BrowserRouter>
       <NavBar filterState={filterItems}/>
         <Routes>
-            <Route path='/filtredHome' element={<FiltredHome itens={itens}/>}/>
             <Route path="/" element={<Home/>} />
-            <Route path="/produto/:prod" element={<Product/>}/>
-            <Route path='/cadastro' element={<Cadastro />}/>
             <Route path='/login' element={<Login />}/>
-            <Route path='/userpage/:id' element={<UserPage produtos={itens} />} />
+            <Route path='/cadastro' element={<Cadastro />}/>
+            <Route path="/produto/:prod" element={<Product/>}/>
+            <Route path='/filtredHome' element={<FiltredHome itens={itens}/>}/>
+            <Route path='/userpage/:id' element={<UserPage itens={itens} />} />
             <Route path='/perfil/:id' element={<Perfil />} />
         </Routes>
       </BrowserRouter>

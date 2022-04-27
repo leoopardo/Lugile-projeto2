@@ -17,10 +17,8 @@ export function NavBar(props) {
                         type="text"
                         className="SearchBar"   
                         placeholder= "pesquise"
-                        onKeyUp={(e) => {props.filterState(e.target.value)
-                        }}
-
-                        
+                        onKeyDown={(e) => {props.filterState(e.target.value)
+                        }}  
                     />
                     <button>search</button>
                 </form>        

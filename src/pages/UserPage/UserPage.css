@@ -3,8 +3,8 @@
     background-color: #680179;
     display: flex;
     justify-content: space-between;
-    margin-right: 2%;
-    margin-left: 2%;
+    border-radius: 1%;
+    margin: 2%;
 }
 .productTitle{
     font-size: 15px;
@@ -13,7 +13,7 @@
     height: 100px;
 }
 .loja{
-    margin-left: 2%;
+    margin-left: 1%;
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
@@ -21,8 +21,42 @@
 .iten{
     color: #680179;
     background-color: white;
-    width: 300px;
-    margin: 1%;
+    width: 250px;
+    margin: 5px;
     border: 1px solid black;
     border-radius: 5%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divCarrinho{
+    position:relative;
+    margin-right: 5%;
+}
+.Button{
+    font-weight: 600;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #A404BE;
+}
+.boxCarrinho{
+    margin-top: 2%;
+    width: 400px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    list-style: none;
+    border: 1px solid white;
+    background-color: #A404BE;
+}
+.carrinho{
+  width: 400px;
 }
