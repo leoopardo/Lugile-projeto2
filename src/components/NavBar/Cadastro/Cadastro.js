@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Cadastro.css"
 
 export function Cadastro() {
     const navigate = useNavigate();
@@ -24,51 +25,53 @@ export function Cadastro() {
 
     }
     return ( 
-        <form onSubmit={handleSubmit} >
-            <div>
-                    <h1>Cadastre-se aqui</h1>
-                    <p>e começe suas compras..</p>
+        <div className="cadastrar">
+            <form onSubmit={handleSubmit}  >
+                <div >
+                        <h1>Cadastre-se aqui</h1>
+                        <p>e começe suas compras..</p>
 
-                    <input 
-                    name="name"
-                    type="text"
-                    placeholder="nome"
-                    onChange={handleChange}
-                    />
+                        <input 
+                        name="name"
+                        type="text"
+                        placeholder="nome"
+                        onChange={handleChange}
+                        />
 
 
-                    <input 
-                    name="password"
-                    type="password"
-                    placeholder="senha"
-                    onChange={handleChange}
-                    />
+                        <input 
+                        name="password"
+                        type="password"
+                        placeholder="senha"
+                        onChange={handleChange}
+                        />
 
-                     <input 
-                    name="endereço"
-                    type="text"
-                    placeholder="endereço"
-                    onChange={handleChange}
-                    />
+                        <input 
+                        name="endereço"
+                        type="text"
+                        placeholder="endereço"
+                        onChange={handleChange}
+                        />
 
-                     <input 
-                    name="telefone"
-                    type="text"
-                    placeholder="telefone"
-                    onChange={handleChange}
-                    />
+                        <input 
+                        name="telefone"
+                        type="text"
+                        placeholder="telefone"
+                        onChange={handleChange}
+                        />
 
-                     <input 
-                    name="email"
-                    type="text"
-                    placeholder="email"
-                    onChange={handleChange}
-                    />
+                        <input 
+                        name="email"
+                        type="text"
+                        placeholder="email"
+                        onChange={handleChange}
+                        />
 
-                    <button type="submit">Cadastrar</button>
+                        <button type="submit">Cadastrar</button>
 
-            </div>
-        </form>
+                </div>
+            </form>
+        </div>
      );
 }
 
