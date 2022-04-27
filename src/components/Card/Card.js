@@ -2,6 +2,7 @@ import {useState, useEffect, useRef} from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Card.css"
+import sale from "../../images/Sale.jpg"
 
 
 export function Card() {
@@ -29,26 +30,29 @@ export function Card() {
     }
 
     return(
-        <div>
-            <div className="buttonsSection">
-                <button className="btnStyle">Roupas Masculinas</button>
-                <button className="btnStyle">Roupas Femininas</button>
-                <button className="btnStyle">Eletrônicos</button>
-                <button className="btnStyle">Jóias</button>
+        <div>          
+           <div className="card1">
+                    <img src="/src/images/Nova coleção.png" alt="new colection"></img>
+
             </div>
             <section className="section">
                <div className="container">
                  <div className="carousel" ref={carousel}>
                     {produtos.map((item) => {   
                     const {title, image, id, price} = item;
-                        return(
-                        <div className="item" key={id}>
-                            <div className="image">
-                                <img src={image} alt={title}></img>
-                            </div>
-                            <div className="info">
-                                <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
-                            </div>
+                      
+                    return(
+                
+                    <div className="item" key={id}>
+                        <Link to={`/produto/${item.id}`}>
+                            <div className="image"> 
+                            <img src={image} alt={title}></img>
+                    </div> </Link>
+                    
+                        <div className="info">
+
+                           <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
+
                         </div>
                     )
                     })} 
@@ -58,7 +62,13 @@ export function Card() {
                      <button onClick={handleRightBtn}><img src="../../images/seta.png" alt="Scrool Rigth"/></button>
                  </div>
                </div>
+
+               
             </section>
+            <div className="card">
+                    <img src={sale} alt="Card Promo"></img>
+            </div>
+             
         </div>
     )
 }

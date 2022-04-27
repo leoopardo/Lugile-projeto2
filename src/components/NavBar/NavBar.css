@@ -1,22 +1,66 @@
 .NavBar{
-    height: 100px;
-    margin: 1% 1% 1% 1%;
+    height: 80px;
+    /*margin: 1% 1% 1% 1%;*/
     background-color: #A404BE;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .SearchBar{
-    margin-left: 15%;
+    
     height: 30px;
-    width: 400px;
+    width: 700px;
     font-size: 25px;
+    border-radius: 2px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
 }
+
+
 .FormSearchBar{
     display: flex;
+   
 }
 .ButtonForm{
     background-color:white;
     padding: 2px, 8px;
     border: none
+}
+
+.button{
+    padding: 2px;
+    width: 70px;
+    cursor: pointer;
+    }
+
+.departamentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 8px;
+    color: #E8F7EE;
+    margin: 2px;
+
+}
+
+.user{
+    display: flex;
+    gap: 10px;
+}
+
+.btnCad {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E8F7EE;
+}
+.btnLog {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E8F7EE;
+}
+.link {
+    text-decoration: none;
+
 }

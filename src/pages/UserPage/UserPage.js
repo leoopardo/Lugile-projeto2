@@ -15,15 +15,13 @@ export function UserPage(props) {
             );
             setLogin(response.data)
             setMeuCarrinho(response.data.carrinho)
-            console.log(response.data.carrinho)
         }
         fetchUser();
     }, [params.id])
-    console.log(login);
+
     function handleRemoveItem(index) {
         const cloneItem = [...meuCarrinho];
         cloneItem.splice(index, 1);
-        console.log(index)
         axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, {carrinho: cloneItem })
     
         setMeuCarrinho(cloneItem);
@@ -59,7 +57,6 @@ export function UserPage(props) {
                                 <p> Preço: ${currentProduto.price}</p>
                                 <button onClick={(event)=> {                           
                                     setMeuCarrinho([...meuCarrinho, currentProduto])
-                                    console.log(meuCarrinho)
                                     axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, {carrinho: meuCarrinho })}}> Carrinho </button>
                             </article>
                         </article>

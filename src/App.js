@@ -14,12 +14,13 @@ import { Perfil } from './pages/Perfil/Perfil';
 
 function App() {
   const [itens, setItens] = useState([])
-  const [backUp, setBeckUp] = useState([...itens])
+  const [backUp, setBackUp] = useState([...itens])
 
   useEffect(() => {
     async function getItens(){
       const response = await axios.get('https://fakestoreapi.com/products');
       setItens(response.data);
+      setBackUp(response.data);
     }
     getItens()
   }, [])

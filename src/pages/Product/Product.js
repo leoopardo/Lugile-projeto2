@@ -11,11 +11,10 @@ export function Product() {
         async function getItens() {
             const response = await axios.get(`https://fakestoreapi.com/products/${params.prod}`);
             setItens(response.data);
-            console.log(response)
           }
           getItens()
         }, [])
-        console.log(itens)
+        
         
     
  

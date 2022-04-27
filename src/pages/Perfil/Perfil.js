@@ -19,7 +19,7 @@ export function Perfil() {
         async function fetchUser(){
             const response = await axios.get(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`
             );
-            console.log(response)
+
             setCadastro({...response.data})
         }
             fetchUser();
