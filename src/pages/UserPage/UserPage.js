@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import "./UserPage.css"
+
 
 export function UserPage() {
     const params = useParams();
@@ -33,9 +34,21 @@ export function UserPage() {
         fetchProdutos();
     }, [] );
    
+    function handleRemoveItem(index) {
+        const cloneItem = [...meuCarrinho];
+        cloneItem.splice(index, 1);
+        console.log(index)
+        axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, {carrinho: cloneItem })
+    
+        setMeuCarrinho(cloneItem);
+      }
+    
     return ( 
         <div className="userPage">
-            <h1>Bem vindo (a), {login.name}!</h1>
+            <div>
+                <h1>Bem vindo (a), {login.name}!</h1>
+                <Link to="/"><button>Sair</button></Link>
+            </div>
             <div className="todos">
                 <div className="loja">
                 {produtos.map((currentProduto) => {
@@ -56,10 +69,12 @@ export function UserPage() {
                 })}; 
                 </div>
                 <ul className="carrinho">
-                    {meuCarrinho.map((currentProduto) => {
+                    {meuCarrinho.map((currentProduto, index) => {
                         return (
                             <li>
                                 <h5>{currentProduto.title}</h5>
+                                <button onClick={() => {handleRemoveItem(index)
+                                }}>Remover</button>
                             </li>
                         )
                     })}
