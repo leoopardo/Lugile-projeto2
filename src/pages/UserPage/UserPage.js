@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import "./UserPage.css"
 
 
-export function UserPage() {
+export function UserPage(props) {
     const params = useParams();
     const [produtos, setProdutos] = useState([]);
     const [login, setLogin] = useState([]);
@@ -25,14 +25,7 @@ export function UserPage() {
     }, [params.id])
     console.log(login);
 
-    useEffect (() => {
-        async function fetchProdutos(){
-            const responde = await axios.get("https://fakestoreapi.com/products");
-
-            setProdutos(responde.data)
-        }
-        fetchProdutos();
-    }, [] );
+ 
    
     function handleRemoveItem(index) {
         const cloneItem = [...meuCarrinho];
@@ -48,10 +41,12 @@ export function UserPage() {
             <div>
                 <h1>Bem vindo (a), {login.name}!</h1>
                 <Link to="/"><button>Sair</button></Link>
+                <Link to={`/perfil/${params.id}`}><button>Perfil</button></Link>
+
             </div>
             <div className="todos">
                 <div className="loja">
-                {produtos.map((currentProduto) => {
+                {props.produtos.map((currentProduto) => {
                     return (
                         <article className="iten">
                             <article className="product">

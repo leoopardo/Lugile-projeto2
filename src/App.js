@@ -9,6 +9,7 @@ import { Login } from './components/NavBar/Login/Login';
 import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
 import { FiltredHome} from './pages/FilteredHome/FilteredHome'
 import { UserPage } from './pages/UserPage/UserPage';
+import { Perfil } from './pages/Perfil/Perfil';
 
 function App() {
   const [itens, setItens] = useState([])
@@ -47,7 +48,8 @@ function App() {
             <Route path="/produto/:prod" element={<Product/>}/>
             <Route path='/cadastro' element={<Cadastro />}/>
             <Route path='/login' element={<Login />}/>
-            <Route path='/userpage/:id' element={<UserPage />} />
+            <Route path='/userpage/:id' element={<UserPage produtos={itens} />} />
+            <Route path='/perfil/:id' element={<Perfil />} />
         </Routes>
       </BrowserRouter>
     </div>
