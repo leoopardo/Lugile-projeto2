@@ -4,9 +4,9 @@ import { useParams, Link } from "react-router-dom";
 import "./UserPage.css"
 
 
-export function UserPage() {
+export function UserPage(props) {
     const params = useParams();
-    const [produtos, setProdutos] = useState([]);
+   
     const [login, setLogin] = useState([]);
     const [meuCarrinho, setMeuCarrinho] = useState([])
     
@@ -19,25 +19,16 @@ export function UserPage() {
             );
             setLogin(response.data)
             setMeuCarrinho(response.data.carrinho)
-            console.log(response.data.carrinho)
         }
         fetchUser();
     }, [params.id])
-    console.log(login);
 
-    useEffect (() => {
-        async function fetchProdutos(){
-            const responde = await axios.get("https://fakestoreapi.com/products");
 
-            setProdutos(responde.data)
-        }
-        fetchProdutos();
-    }, [] );
+ 
    
     function handleRemoveItem(index) {
         const cloneItem = [...meuCarrinho];
         cloneItem.splice(index, 1);
-        console.log(index)
         axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, {carrinho: cloneItem })
     
         setMeuCarrinho(cloneItem);
@@ -48,10 +39,12 @@ export function UserPage() {
             <div>
                 <h1>Bem vindo (a), {login.name}!</h1>
                 <Link to="/"><button>Sair</button></Link>
+                <Link to={`/perfil/${params.id}`}><button>Perfil</button></Link>
+
             </div>
             <div className="todos">
                 <div className="loja">
-                {produtos.map((currentProduto) => {
+                {props.produtos.map((currentProduto) => {
                     return (
                         <article className="iten">
                             <article className="product">
@@ -61,7 +54,6 @@ export function UserPage() {
                                 <p> Preço: ${currentProduto.price}</p>
                                 <button onClick={(event)=> {                           
                                     setMeuCarrinho([...meuCarrinho, currentProduto])
-                                    console.log(meuCarrinho)
                                     axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, {carrinho: meuCarrinho })}}> Carrinho </button>
                             </article>
                         </article>
