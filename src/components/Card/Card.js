@@ -3,6 +3,9 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Card.css"
 import sale from "../../images/Sale.jpg"
+import setas from "../../images/seta.png"
+import newcolection from "../../images/Nova coleção.png"
+
 
 
 export function Card() {
@@ -11,7 +14,7 @@ export function Card() {
 
     useEffect (() => {
         async function fetchProdutos() {
-            const response = await axios.get("https://fakestoreapi.com/products");
+            const response = await axios.get("https://ironrest.herokuapp.com/Lugile-Itens");
 
             setProdutos(response.data)
         };
@@ -30,10 +33,10 @@ export function Card() {
     }
 
     return(
-        <div>          
+        
+        <div>   
            <div className="card1">
-                    <img src="/src/images/Nova coleção.png" alt="new colection"></img>
-
+                    <img src={newcolection} alt="new colection" className="cardSale"></img>
             </div>
             <section className="section">
                <div className="container">
@@ -52,22 +55,22 @@ export function Card() {
                         <div className="info">
 
                            <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
-
+                        </div>
                         </div>
                     </div>
                     )
                     })} 
                  </div>
                  <div className="buttons">
-                     <button onClick={handleLeftBtn}><img src="../../images/seta.png" alt="Scrool Left"/></button>
-                     <button onClick={handleRightBtn}><img src="../../images/seta.png" alt="Scrool Rigth"/></button>
+                     <button onClick={handleLeftBtn}><img src={setas} alt="Scrool Left" className="setas"/></button>
+                     <button onClick={handleRightBtn}><img src={setas} alt="Scrool Rigth"  className="setas"/></button>
                  </div>
                </div>
 
                
             </section>
-            <div className="card">
-                    <img src={sale} alt="Card Promo"></img>
+            <div className="card2">
+                    <img src={sale} alt="Card Promo" className="cardPromo"></img>
             </div>
              
         </div>

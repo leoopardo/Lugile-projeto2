@@ -56,13 +56,40 @@
     border-radius: 5px;
     padding: 5px;
     background-color: #E8F7EE;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #A404BE;
+    font-weight: bold;
+    
 }
 .btnLog {
     border-radius: 5px;
     padding: 5px;
     background-color: #E8F7EE;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #A404BE;
+    font-weight: bold;
+    
 }
 .link {
     text-decoration: none;
 
+}
+.logo {
+    height: 200px;
+    margin-top: 55px;
+}
+
+.lupa {
+    height: 20px;
+
+}
+
+.cadastrar {
+    height: 25px;
+}
+
+.login {
+    height: 25px;
 }

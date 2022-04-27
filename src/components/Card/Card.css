@@ -19,7 +19,7 @@ h1{
 
 }
 .container {
-    max-width: 74vw;
+    max-width: 73vw;
 }
 .container .carousel {
     display: flex;
@@ -108,9 +108,27 @@ h1{
     font-weight: bold;
 }
 .card1{
-    background-color: #E8F7EE
+    background-color: #E8F7EE;    
 }
 
 .card2{
-    background-color: #E8F7EE
+    background-color: #E8F7EE;
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.cardSale {
+    width: 1100px;
+    height: 300px;
+
+}
+.cardPromo {
+    max-width: 73vw;
+
+}
+.setas {
+    height: 40px;
+    margin-top: 10px;
 }
