@@ -3,7 +3,6 @@
 }
 
 
-
 .Form{
     display: flex;
     flex-direction: column;
@@ -24,10 +23,7 @@
 
 }
 
-
-
 .Input1{
-    display: flex;
     display: flex;
     padding: 10px;
     height: 50px;
