@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./style.modules.css"
 
 export function Login() {
     const navigate = useNavigate();
@@ -27,24 +28,24 @@ export function Login() {
         return ( 
 
 
-        <div>
-            <form onSubmit={handleSubmit} >              
-                <input 
+        <div className="Body" >
+            <form className="Form" onSubmit={handleSubmit} >    
+            <h1>Login</h1>  
+
+                <input className="Input1"
                     name="name"
                     type="text"
-                    placeholder="nome"
-                    
-
-                />
+                    placeholder="Nome"
+                    />
                 
-                <input 
+                <input className="Input2"
                     name="password"
                     type="password"
-                    placeholder="senha"
+                    placeholder="Senha"
                     value={password}
                     onChange={(e)=> setPassword(e.target.value)}
                 /> 
-                <button type="submit"> Login </button> 
+                <button className="Button" type="submit"> Entrar </button> 
             </form>
         </div>      
         )

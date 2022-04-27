@@ -41,22 +41,22 @@ export function Card() {
             <section className="section">
                <div className="container">
                  <div className="carousel" ref={carousel}>
-                    {produtos.map((item) => {
-                        
+                    {produtos.map((item) => {   
                     const {title, image, id, price} = item;
+                      
                     return(
                 
                     <div className="item" key={id}>
                         <Link to={`/produto/${item.id}`}>
                             <div className="image"> 
-                            <img src={image} alt={title}></img>
-                    </div> </Link>
+                                <img src={image} alt={title}></img> 
+                            </div> </Link>
                     
                         <div className="info">
 
                            <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
-                        </div>
 
+                        </div>
                     </div>
                     )
                     })} 
@@ -66,13 +66,13 @@ export function Card() {
                      <button onClick={handleRightBtn}><img src={setas} alt="Scrool Rigth"  className="setas"/></button>
                  </div>
                </div>
+
                
             </section>
             <div className="card2">
                     <img src={sale} alt="Card Promo" className="cardPromo"></img>
             </div>
-              
-
+             
         </div>
     )
 }
