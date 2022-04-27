@@ -10,6 +10,7 @@ import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
 import { FiltredHome} from './pages/FilteredHome/FilteredHome'
 import { UserPage } from './pages/UserPage/UserPage';
 import { keyboard } from '@testing-library/user-event/dist/keyboard';
+import { Perfil } from './pages/Perfil/Perfil';
 
 function App() {
   const [itens, setItens] = useState([])
@@ -48,6 +49,7 @@ function App() {
             <Route path="/produto/:prod" element={<Product/>}/>
             <Route path='/filtredHome' element={<FiltredHome itens={itens}/>}/>
             <Route path='/userpage/:id' element={<UserPage itens={itens} />} />
+            <Route path='/perfil/:id' element={<Perfil />} />
         </Routes>
       </BrowserRouter>
     </div>

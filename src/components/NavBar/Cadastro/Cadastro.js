@@ -44,6 +44,27 @@ export function Cadastro() {
                     onChange={handleChange}
                     />
 
+                     <input 
+                    name="endereço"
+                    type="text"
+                    placeholder="endereço"
+                    onChange={handleChange}
+                    />
+
+                     <input 
+                    name="telefone"
+                    type="text"
+                    placeholder="telefone"
+                    onChange={handleChange}
+                    />
+
+                     <input 
+                    name="email"
+                    type="text"
+                    placeholder="email"
+                    onChange={handleChange}
+                    />
+
                     <button type="submit">Cadastrar</button>
 
             </div>

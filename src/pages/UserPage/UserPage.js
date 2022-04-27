@@ -6,7 +6,6 @@ import "./UserPage.css"
 
 export function UserPage(props) {
     const params = useParams();
-    const [produtos, setProdutos] = useState([]);
     const [login, setLogin] = useState([]);
     const [meuCarrinho, setMeuCarrinho] = useState([])
 
@@ -22,6 +21,8 @@ export function UserPage(props) {
     }, [params.id])
     console.log(login);
 
+ 
+   
     function handleRemoveItem(index) {
         const cloneItem = [...meuCarrinho];
         cloneItem.splice(index, 1);
@@ -36,10 +37,12 @@ export function UserPage(props) {
             <div>
                 <h1>Bem vindo (a), {login.name}!</h1>
                 <Link to="/"><button>Sair</button></Link>
+                <Link to={`/perfil/${params.id}`}><button>Perfil</button></Link>
+
             </div>
             <div className="todos">
                 <div className="loja">
-                {props.itens.map((currentProduto) => {
+                {props.produtos.map((currentProduto) => {
                     return (
                         <article className="iten">
                             <article className="product">
@@ -66,11 +69,8 @@ export function UserPage(props) {
                             </li>
                         )
                     })}
-
-                </ul>  
-
-            </div> 
-                                     
+                </ul> 
+            </div>                          
         </div>
     );
 };
