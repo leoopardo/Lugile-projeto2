@@ -1,0 +1,54 @@
+.Form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    margin: 100px;
+    border-color: black;
+    color: black;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: white;
+    border: 2px;
+    border-style:groove;
+}
+.Input{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: 50%;
+    margin-block-end: 15px;
+    font-size: 20px;
+    text-align:start;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.Label{
+    display: flex;
+    justify-content: start;
+    
+}
+.Btn1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    margin-right: 28%;
+
+}
+.Btn2{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    margin-left: 28%;
+    margin-top: -5.5%;
+
+}

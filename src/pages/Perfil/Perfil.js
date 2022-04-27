@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import "./style.modules.css"
 
 export function Perfil() {
     const params = useParams();
@@ -47,50 +48,51 @@ export function Perfil() {
 
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="inputName">Nome:</label>
-                <input
+        <div >
+            <form className="Form"  onSubmit={handleSubmit}>
+                <label className="Label" htmlFor="inputName">Nome:</label>
+                <input className="Input"
                 id="inputName"
                 name="name"
                 value={cadastro.name}
                 onChange={handleChange}
                 />
 
-                <label htmlFor="inputPassword">Senha:</label>
-                <input
+                <label className="Label" htmlFor="inputPassword">Senha:</label>
+                <input className="Input"
                 id="inputPassword"
                 name="password"
+                type="password"
                 value={cadastro.password}
                 onChange={handleChange}
                 />
 
-                <label htmlFor="inputEndereço">Endereço:</label>
-                <input
+                <label className="Label" htmlFor="inputEndereço">Endereço:</label>
+                <input className="Input"
                 id="inputEndereço"
                 name="endereço"
                 value={cadastro.endereço}
                 onChange={handleChange}
                 />
 
-                <label htmlFor="inputTelefone">Telefone:</label>
-                <input
+                <label className="Label" htmlFor="inputTelefone">Telefone:</label>
+                <input className="Input"
                 id="inputTelefone"
                 name="telefone"
                 value={cadastro.telefone}
                 onChange={handleChange}
                 />
 
-                <label htmlFor="inputEmail">Email:</label>
-                <input
+                <label className="Label" htmlFor="inputEmail">Email:</label>
+                <input className="Input"
                 id="inputEmail"
                 name="email"
                 value={cadastro.email}
                 onChange={handleChange}
                 />
 
-                <button type="submit">Editar!</button>
-                <button onClick={handleDelete} >Deletar</button>
+                <button  className="Btn1" type="submit">Fazer alterações</button>
+                <button className="Btn2" onClick={handleDelete} >Deletar</button>
 
 
             </form>
