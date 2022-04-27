@@ -67,8 +67,9 @@ export function Cadastro() {
 
                     <button className="Button" type="submit">Cadastrar</button>
 
-            </div>
-        </form>
+                </div>
+            </form>
+        
      );
 }
 
