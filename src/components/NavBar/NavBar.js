@@ -1,5 +1,9 @@
 import "./NavBar.css"
 import { Link, useNavigate } from "react-router-dom";
+import logo from "../../images/logo.png"
+import lupa from "../../images/lupa.png"
+import signIn from "../../images/sign in.png"
+import logIn from "../../images/transferir.png"
 
 export function NavBar(props) {
     const navigate = useNavigate()
@@ -11,7 +15,7 @@ export function NavBar(props) {
     
     return ( 
         <nav className="NavBar">
-            <img src={"/src/images/logo1.png"} alt="logo"></img>
+            <img src={logo} alt="logo" className="logo"></img>
             <div>   
                 <div className="departamentos">
                         <Link to="/Product" className="link"><h2>Roupas Masculinas</h2></Link>
@@ -25,17 +29,19 @@ export function NavBar(props) {
                     <input 
                         type="text"
                         className="SearchBar"   
-                        placeholder= "pesquise"
-                        onKeyDown={(e) => {props.filterState(e.target.value)
-                        }}  
+                        placeholder= "Buscar produtos"
+                        onKeyUp={(e) => {props.filterState(e.target.value)
+                        }}
+
+                        
                     />
-                    <button className="button"><img src="/src/images/lupa.png" alt="lupa"></img></button>
+                    <button className="button"><img src={lupa} alt="lupa" className="lupa"></img></button>
                 </form>  
                 </div>      
             </div>
             <div className="user">
-                <Link to="/cadastro" ><button className="btnCad"> Cadastro </button></Link>
-                <Link to="/login" ><button className="btnLog"> Login </button></Link>
+                <Link to="/cadastro" ><button className="btnCad"> <img src={signIn} alt="Sign in" className="cadastrar"></img> </button></Link>
+                <Link to="/login" ><button className="btnLog"> <img src={logIn} alt="Log in" className="login"></img> </button></Link>
             </div>    
         </nav>
     

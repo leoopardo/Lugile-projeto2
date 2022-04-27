@@ -12,37 +12,27 @@ export function Perfil() {
         endereço:"",
         telefone:"",
         email:"",
-
     });
-
 
     useEffect(()=> {
         async function fetchUser(){
             const response = await axios.get(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`
             );
-
             setCadastro({...response.data})
         }
             fetchUser();
-
     }, [params.id]);
 
     function handleChange(e){
         setCadastro({[e.target.name]: e.target.value})
     };
-
    async function handleSubmit (e) {
         e.preventDefault();
-
-
        await axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, cadastro)
-    
 }
 
- async function handleDelete(){
-     
+ async function handleDelete(){ 
      await axios.delete(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`)
-
      navigate("/");
  }
 
@@ -95,6 +85,8 @@ export function Perfil() {
                 <button className="Btn2" onClick={handleDelete} >Deletar</button>
 
 
+                <button type="submit">Editar!</button>
+                <button onClick={handleDelete} >Deletar</button>
             </form>
         </div>
     );

@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     async function getItens(){
-      const response = await axios.get('https://fakestoreapi.com/products');
+      const response = await axios.get('https://ironrest.herokuapp.com/Lugile-Itens');
       setItens(response.data);
       setBackUp(response.data);
     }
