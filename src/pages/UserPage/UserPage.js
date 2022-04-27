@@ -35,7 +35,6 @@ export function UserPage(props) {
     const totalPriceSum = totalPrice.reduce(function(acumulador, proximoItem){
         return acumulador + proximoItem
     })
-    console.log(totalPriceSum)
     
     return ( 
         <div className="userPage">
