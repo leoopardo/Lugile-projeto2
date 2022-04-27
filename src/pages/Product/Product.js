@@ -15,10 +15,6 @@ export function Product() {
           getItens()
         }, [])
         
-        
-    
- 
-
     return(
         <div>
             <div>
@@ -31,9 +27,6 @@ export function Product() {
                 <span>{itens.description}</span>
                 <span>{itens.rating}</span>
             </div>
-
-
         </div>
         )
-
     }

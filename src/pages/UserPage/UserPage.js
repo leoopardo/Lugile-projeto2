@@ -73,14 +73,14 @@ export function UserPage(props) {
                                         <h5>{currentProduto.title}</h5>
                                         <img src={currentProduto.image} alt={currentProduto.title} style={{height: "50px"}}/>
                                     </div>
-                                    <p>price: U${currentProduto.price}</p>
+                                    <p>price: R${currentProduto.price}</p>
                                     <button className="Button" onClick={() => {handleRemoveItem(index)
                                     }}>Remover</button>
                                 </li>
                             </>
                         )
                     })}
-                    <h3>Total price: U${totalPriceSum}</h3>
+                    <h3>Total price: R${totalPriceSum}</h3>
                 </ul> 
             </div>                          
         </div>
