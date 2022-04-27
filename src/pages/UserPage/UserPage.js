@@ -55,16 +55,18 @@ export function UserPage() {
                     );
                 })}; 
                 </div>
-                <ul className="carrinho">
-                    {meuCarrinho.map((currentProduto) => {
-                        return (
-                            <li>
-                                <h5>{currentProduto.title}</h5>
-                            </li>
-                        )
-                    })}
-
-                </ul>  
+                <div className="divCarrinho">
+                    <ul className="carrinho">
+                        {meuCarrinho.map((currentProduto) => {
+                            return (
+                                <li>
+                                    <h5>{currentProduto.title}</h5>
+                                    
+                                </li>
+                            )
+                        })}
+                    </ul> 
+                </div> 
 
             </div> 
                                      

@@ -3,8 +3,8 @@
     background-color: #680179;
     display: flex;
     justify-content: space-between;
-    margin-right: 2%;
-    margin-left: 2%;
+    border-radius: 1%;
+    margin: 2%;
 }
 .productTitle{
     font-size: 15px;
@@ -26,3 +26,8 @@
     border: 1px solid black;
     border-radius: 5%;
 }
+.divCarrinho{
+    position:relative;
+    margin-right: 5%;
+}
+
