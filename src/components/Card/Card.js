@@ -11,7 +11,7 @@ export function Card() {
 
     useEffect (() => {
         async function fetchProdutos() {
-            const response = await axios.get("https://fakestoreapi.com/products");
+            const response = await axios.get("https://ironrest.herokuapp.com/Lugile-Itens");
 
             setProdutos(response.data)
         };
@@ -52,7 +52,7 @@ export function Card() {
                         <div className="info">
 
                            <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
-
+                        </div>
                         </div>
                     )
                     })} 
