@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./UserPage.css"
 
-export function UserPage() {
+export function UserPage(props) {
     const params = useParams();
     const [produtos, setProdutos] = useState([]);
     const [login, setLogin] = useState([]);
@@ -24,21 +24,12 @@ export function UserPage() {
     }, [params.id])
     console.log(login);
 
-    useEffect (() => {
-        async function fetchProdutos(){
-            const responde = await axios.get("https://fakestoreapi.com/products");
-
-            setProdutos(responde.data)
-        }
-        fetchProdutos();
-    }, [] );
-   
     return ( 
         <div className="userPage">
             <h1>Bem vindo (a), {login.name}!</h1>
             <div className="todos">
                 <div className="loja">
-                {produtos.map((currentProduto) => {
+                {props.itens.map((currentProduto) => {
                     return (
                         <article className="iten">
                             <article className="product">
@@ -61,7 +52,7 @@ export function UserPage() {
                             return (
                                 <li>
                                     <h5>{currentProduto.title}</h5>
-                                    
+                                    <p>U$:{currentProduto.price}</p>
                                 </li>
                             )
                         })}
