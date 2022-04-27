@@ -2,7 +2,7 @@ import {useState, useEffect, useRef} from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Card.css"
-import { Link } from "react-router-dom";
+
 
 
 export function Card() {
@@ -48,11 +48,11 @@ export function Card() {
                     return(
                    
                     <div className="item" key={id}>
-                       <Link to={`/produto/${item.id}`}><div className="image">
+                       <Link to={`/produto/${item.id}`}>
+                            <div className="image">
                             <img src={image} alt={title}></img>
-                        </div>
+                        </div></Link>
                         <div className="info">
-                            {/*<span className="title">{title}</span>*/}
 
                            <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
                         </div>
