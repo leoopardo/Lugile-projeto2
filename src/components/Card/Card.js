@@ -46,14 +46,15 @@ export function Card() {
                     <div className="item" key={id}>
                         <Link to={`/produto/${item.id}`}>
                             <div className="image"> 
-                            <img src={image} alt={title}></img>
-                    </div> </Link>
+                                <img src={image} alt={title}></img> 
+                            </div> </Link>
                     
                         <div className="info">
 
                            <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
 
                         </div>
+                    </div>
                     )
                     })} 
                  </div>
