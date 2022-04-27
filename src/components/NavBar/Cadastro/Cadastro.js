@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./style.modules.css"
 
 export function Cadastro() {
     const navigate = useNavigate();
@@ -24,12 +25,11 @@ export function Cadastro() {
 
     }
     return ( 
-        <form onSubmit={handleSubmit} >
-            <div>
-                    <h1>Cadastre-se aqui</h1>
-                    <p>e começe suas compras..</p>
+        <form className="Body" onSubmit={handleSubmit} >
+            <div className="Form" >
+                    <h1>Digite seus dados</h1>
 
-                    <input 
+                    <input className="Input1"
                     name="name"
                     type="text"
                     placeholder="nome"
@@ -37,35 +37,35 @@ export function Cadastro() {
                     />
 
 
-                    <input 
+                    <input className="Input2"
                     name="password"
                     type="password"
                     placeholder="senha"
                     onChange={handleChange}
                     />
 
-                     <input 
+                     <input className="Input3"
                     name="endereço"
                     type="text"
                     placeholder="endereço"
                     onChange={handleChange}
                     />
 
-                     <input 
+                     <input className="Input4"
                     name="telefone"
                     type="text"
                     placeholder="telefone"
                     onChange={handleChange}
                     />
 
-                     <input 
+                     <input className="Input5"
                     name="email"
                     type="text"
                     placeholder="email"
                     onChange={handleChange}
                     />
 
-                    <button type="submit">Cadastrar</button>
+                    <button className="Button" type="submit">Cadastrar</button>
 
             </div>
         </form>

@@ -6,12 +6,8 @@ import "./UserPage.css"
 
 export function UserPage(props) {
     const params = useParams();
-   
     const [login, setLogin] = useState([]);
     const [meuCarrinho, setMeuCarrinho] = useState([])
-    
-    
-    
 
     useEffect (() => {
         async function fetchUser(){
@@ -23,9 +19,6 @@ export function UserPage(props) {
         fetchUser();
     }, [params.id])
 
-
- 
-   
     function handleRemoveItem(index) {
         const cloneItem = [...meuCarrinho];
         cloneItem.splice(index, 1);
@@ -33,6 +26,16 @@ export function UserPage(props) {
     
         setMeuCarrinho(cloneItem);
       }
+    const totalPrice = [0]
+    for(let i = 0; i < meuCarrinho.length; i++){
+        totalPrice.push(meuCarrinho[i].price)
+        console.log(totalPrice)
+    }
+
+    const totalPriceSum = totalPrice.reduce(function(acumulador, proximoItem){
+        return acumulador + proximoItem
+    })
+    console.log(totalPriceSum)
     
     return ( 
         <div className="userPage">
@@ -44,7 +47,7 @@ export function UserPage(props) {
             </div>
             <div className="todos">
                 <div className="loja">
-                {props.produtos.map((currentProduto) => {
+                {props.itens.map((currentProduto) => {
                     return (
                         <article className="iten">
                             <article className="product">
@@ -61,20 +64,25 @@ export function UserPage(props) {
                 })}; 
                 </div>
                 <ul className="carrinho">
+                    <h3>Seu Carrinho:</h3>
                     {meuCarrinho.map((currentProduto, index) => {
                         return (
-                            <li>
-                                <h5>{currentProduto.title}</h5>
-                                <button onClick={() => {handleRemoveItem(index)
-                                }}>Remover</button>
-                            </li>
+                            <>
+                                <li className="list">
+                                    <div className="boxCarrinho">
+                                        <h5>{currentProduto.title}</h5>
+                                        <img src={currentProduto.image} alt={currentProduto.title} style={{height: "50px"}}/>
+                                    </div>
+                                    <p>price: U${currentProduto.price}</p>
+                                    <button className="Button" onClick={() => {handleRemoveItem(index)
+                                    }}>Remover</button>
+                                </li>
+                            </>
                         )
                     })}
-
-                </ul>  
-
-            </div> 
-                                     
+                    <h3>Total price: U${totalPriceSum}</h3>
+                </ul> 
+            </div>                          
         </div>
     );
 };

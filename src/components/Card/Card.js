@@ -30,18 +30,17 @@ export function Card() {
     }
 
     return(
-        
-        <div>
-          
+        <div>          
            <div className="card1">
                     <img src="/src/images/Nova coleção.png" alt="new colection"></img>
+
             </div>
             <section className="section">
                <div className="container">
                  <div className="carousel" ref={carousel}>
-                    {produtos.map((item) => {
-                        
+                    {produtos.map((item) => {   
                     const {title, image, id, price} = item;
+                      
                     return(
                 
                     <div className="item" key={id}>
@@ -53,9 +52,8 @@ export function Card() {
                         <div className="info">
 
                            <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
-                        </div>
 
-                    </div>
+                        </div>
                     )
                     })} 
                  </div>
@@ -64,13 +62,13 @@ export function Card() {
                      <button onClick={handleRightBtn}><img src="../../images/seta.png" alt="Scrool Rigth"/></button>
                  </div>
                </div>
+
                
             </section>
             <div className="card">
                     <img src={sale} alt="Card Promo"></img>
             </div>
-              
-
+             
         </div>
     )
 }

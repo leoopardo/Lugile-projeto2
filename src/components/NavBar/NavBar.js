@@ -26,10 +26,8 @@ export function NavBar(props) {
                         type="text"
                         className="SearchBar"   
                         placeholder= "pesquise"
-                        onKeyUp={(e) => {props.filterState(e.target.value)
-                        }}
-
-                        
+                        onKeyDown={(e) => {props.filterState(e.target.value)
+                        }}  
                     />
                     <button className="button"><img src="/src/images/lupa.png" alt="lupa"></img></button>
                 </form>  
