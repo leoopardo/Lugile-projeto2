@@ -2,6 +2,7 @@ import {useState, useEffect, useRef} from "react";
 import axios from "axios";
 //import { Link } from "react-router-dom";
 import "./Card.css"
+import { Link } from "react-router-dom";
 
 
 export function Card() {
@@ -53,15 +54,15 @@ export function Card() {
                         </div>
                         <div className="info">
                             {/*<span className="title">{title}</span>*/}
-                            <span className="price">$ {price} </span>
+                           <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
                         </div>
                     </div>
                     )
                     })} 
                  </div>
                  <div className="buttons">
-                     <button onClick={handleLeftBtn}><img src="/src/images/216151_right_chevron_icon.png" alt="Scrool Left"/></button>
-                     <button onClick={handleRightBtn}><img src="/src/images/216151_right_chevron_icon.png" alt="Scrool Rigth"/></button>
+                     <button onClick={handleLeftBtn}><img src="../../images/seta.png" alt="Scrool Left"/></button>
+                     <button onClick={handleRightBtn}><img src="../../images/seta.png" alt="Scrool Rigth"/></button>
                  </div>
                </div>
                 {/*<div>
