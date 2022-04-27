@@ -1,0 +1,106 @@
+.Body{
+    margin-block-end: 100px;
+}
+
+
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    margin: 100px;
+    border-color: black;
+    color: black;
+
+    margin-top: 150px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-block-end: 50px;
+    background-color: white;
+    border: 5px;
+    border-style:groove;
+
+}
+
+
+
+.Input1{
+    display: flex;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    margin-block-end: 40px;
+    font-size: 20px;
+    text-align:start;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.Input2{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    margin-block-end: 40px;
+    font-size: 20px;
+    text-align:start;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+.Input3{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    margin-block-end: 40px;
+    font-size: 20px;
+    text-align:start;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+.Input4{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    margin-block-end: 40px;
+    font-size: 20px;
+    text-align:start;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-radius: 5px;
+
+
+}
+
+.Input5{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    margin-block-end: 75px;
+    font-size: 20px;
+    text-align:start;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+.Button{
+    display: flex;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+
+}
