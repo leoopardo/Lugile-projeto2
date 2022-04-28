@@ -8,9 +8,9 @@
 Lugile Store é um site de pesquisa de produtos que simula o processo de pesquisa, cadastro e login bem como a experiência de um usuário de navegar dentro de uma página  de compra na internet.
 
 **Este projeto foi desenvolvido por:**
-[Leonardo Araujo](https://www.linkedin.com/in/leonardo-araujo-/)
-[Lucas Reis](https://www.linkedin.com/in/lucas-kreis/)
-[Gian Lucca](https://www.linkedin.com/in/gian-lucca-9342b8232/)
+- [Leonardo Araujo](https://www.linkedin.com/in/leonardo-araujo-/)
+- [Lucas Reis](https://www.linkedin.com/in/lucas-kreis/)
+- [Gian Lucca](https://www.linkedin.com/in/gian-lucca-9342b8232/)
 
 
 
