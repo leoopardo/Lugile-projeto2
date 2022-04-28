@@ -65,6 +65,17 @@ export function Cadastro() {
                     onChange={handleChange}
                     />
 
+                    <select className="Input5"
+                    name="genero"
+                    type="text"
+                    placeholder="Gênero"
+                    onChange={handleChange}
+                    > 
+                    <option value="Genero">Gênero</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Outro">Outro</option>
+                    </select>
                     <button className="Button" type="submit">Cadastrar</button>
 
                 </div>

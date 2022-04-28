@@ -40,8 +40,8 @@ export function NavBar(props) {
                 </div>      
             </div>
             <div className="user">
-                <Link to="/cadastro" ><button className="btnCad"> <img src={signIn} alt="Sign in" className="cadastrar"></img> </button></Link>
-                <Link to="/login" ><button className="btnLog"> <img src={logIn} alt="Log in" className="login"></img> </button></Link>
+                <Link to="/cadastro" ><button className="btnCad"> <img src={logIn} alt="Sign in" className="cadastrar"></img>  Sign in</button></Link>
+                <Link to="/login" ><button className="btnLog"> <img src={signIn} alt="Log in" className="login"></img>  Log In</button></Link>
             </div>    
         </nav>
     

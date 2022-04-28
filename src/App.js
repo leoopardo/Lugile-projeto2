@@ -9,7 +9,6 @@ import { Login } from './components/NavBar/Login/Login';
 import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
 import { FiltredHome} from './pages/FilteredHome/FilteredHome'
 import { UserPage } from './pages/UserPage/UserPage';
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import { Perfil } from './pages/Perfil/Perfil';
 
 function App() {
