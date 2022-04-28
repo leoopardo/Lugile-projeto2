@@ -1,8 +1,8 @@
 # Lugile Store
-
-[lugile]<p align="center" width="100%">
+[lugile](
+<p> align="center" width="100%">
     <img width="33%" src="./src/images/logo.readme.png"> 
-</p>(lugile.netlify.app/)
+</p>)(lugile.netlify.app)
 
 **Sobre:**
 Lugile Store é um site de pesquisa de produtos que simula o processo de pesquisa, cadastro e login bem como a experiência de um usuário de navegar dentro de uma página  de compra na internet.
