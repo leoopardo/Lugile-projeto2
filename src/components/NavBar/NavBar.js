@@ -18,10 +18,10 @@ export function NavBar(props) {
             <Link to="/"><img src={logo} alt="logo" className="logo"></img></Link>
             <div>   
                 <div className="departamentos">
-                        <Link to="/Product" className="link"><h2>Roupas Masculinas</h2></Link>
-                        <Link to="/Product" className="link"><h2>Roupas Femininas</h2></Link>
-                        <Link to="/Product" className="link"><h2>Jóias</h2></Link>
-                        <Link to="/Product" className="link"><h2>Eletrônicos</h2></Link>
+                        <Link to="/filteredHome" className="link"><h2>Roupas Masculinas</h2></Link>
+                        <Link to="/filteredHome" className="link"><h2>Roupas Femininas</h2></Link>
+                        <Link to="/filteredHome" className="link"><h2>Jóias</h2></Link>
+                        <Link to="/filteredHome" className="link"><h2>Eletrônicos</h2></Link>
                     </div>
                 <div className="SearchBar">
                 

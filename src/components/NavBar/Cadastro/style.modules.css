@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: center;
 }
+.fundoCad{
+    height: 820px;
+}
 .titulo {
     background-color: white ;
 }
