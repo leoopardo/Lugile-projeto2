@@ -47,7 +47,7 @@ export function Card() {
                     return(
                 
                     <div className="item" key={id}>
-                        <Link to={`/produto/${item.id}`}>
+                        <Link to={`/filteredHome`}>
                             <div className="image"> 
                                 <img src={image} alt={title}></img> 
                             </div> </Link>
