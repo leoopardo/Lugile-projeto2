@@ -1,4 +1,3 @@
-
 .todos{
     color: white;
     background-color: #680179;
@@ -78,4 +77,33 @@
 .carrinho{
   width: 400px;
   margin-top: 15px;
+}
+
+@media screen and (min-width: 330px) and (max-width: 375px){
+    .iten{
+        width: 100px;
+        height: 150px;
+        margin: 1%;    
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        margin-block-end: 1px;
+        margin-top: 5px;
+    }
+    .carrinho{
+        width: 100px;
+        margin-top: 15px;
+      }
+    .productImg{
+        height: 50px;
+    }
+    .productTitle{
+        font-size: 10px;
+    }
+    .btnCad{
+        height: 20px;
+    }
+
+    
 }
