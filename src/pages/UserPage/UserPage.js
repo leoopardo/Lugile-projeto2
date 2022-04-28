@@ -63,7 +63,6 @@ export function UserPage(props) {
                             <article className="product">
                                 <h1 className="productTitle">{currentProduto.title}</h1>
                                 <img src={currentProduto.image} alt={currentProduto.title} className="productImg"/>
-                                <p>{currentProduto.title}</p>
                                 <p> Preço: ${currentProduto.price}</p>
                                 <button className="btnCad" onClick={(event)=> {                           
                                     setMeuCarrinho([...meuCarrinho, currentProduto])
