@@ -36,13 +36,23 @@ export function UserPage(props) {
         return acumulador + proximoItem
     })
     console.log(totalPriceSum)
+
+    let pronome = ""
+
+    if (login.genero === "Feminino"){
+        pronome += "Bem vinda"
+    } else if (login.genero === "Masculino"){
+        pronome += "Bem vindo"
+    } else {
+        pronome += "Bem vinde"
+    }
     
     return ( 
         <div className="userPage">
             <div>
-                <h1>Bem vindo (a), {login.name}!</h1>
-                <Link to="/"><button>Sair</button></Link>
-                <Link to={`/perfil/${params.id}`}><button>Perfil</button></Link>
+                <h1>{pronome}, {login.name}!</h1>
+                <Link to="/"><button className="btnCad">Sair</button></Link>
+                <Link to={`/perfil/${params.id}`}><button className="btnCad">Perfil</button></Link>
 
             </div>
             <div className="todos">
@@ -55,9 +65,9 @@ export function UserPage(props) {
                                 <img src={currentProduto.image} alt={currentProduto.title} className="productImg"/>
                                 <p>{currentProduto.title}</p>
                                 <p> Preço: ${currentProduto.price}</p>
-                                <button onClick={(event)=> {                           
+                                <button className="btnCad" onClick={(event)=> {                           
                                     setMeuCarrinho([...meuCarrinho, currentProduto])
-                                    axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, {carrinho: meuCarrinho })}}> Carrinho </button>
+                                    axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, {carrinho: meuCarrinho })}}> Comprar </button>
                             </article>
                         </article>
                     );

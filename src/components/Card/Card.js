@@ -58,6 +58,7 @@ export function Card() {
                         </div>
                     </div>
                     
+                        
                     )
                     })} 
                  </div>
