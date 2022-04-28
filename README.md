@@ -1,7 +1,7 @@
 # Lugile Store
 
-<p> align="center" width="100%">
-    <a href="lugile.netlify.app"><img width="33%" src="./src/images/logo.readme.png"></a>
+<p align="center" width="100%">
+    <a href="https://lugile.netlify.app/"><img width="33%" src="./src/images/logo.readme.png"></a>
 </p>
 
 **Sobre:**
