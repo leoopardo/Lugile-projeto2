@@ -56,7 +56,9 @@ export function Card() {
 
                            <Link to="/cadastro" > <span className="price">$ {price} </span> </Link>
                         </div>
-                        </div>
+                    </div>
+                    
+                        
                     )
                     })} 
                  </div>

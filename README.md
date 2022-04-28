@@ -1,17 +1,35 @@
-# Getting Started with Create React App
+# Lugile Store
 
-## Available Scripts
+![](../Lugile-projeto2/src/images/logo.png)
 
-In the project directory, you can run:
+## Lugile
+
+Lugile Store é um site de pesquisa de produtos que simula o processo de pesquisa, cadastro e login bem como a experiência de um usuário de navegar dentro de uma página  de compra na internet.
+
+
+# Para desenvolvedores
+
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
+
+## Comandos disponíveis
+
+No terminal de seu diretório digite os seguintes comandos:
+
+## `npm install`
+
+Responsavel por instalar todas as dependências e rodar o app em sua máquina.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo em seu navegador.
 
-#Colaboradores:
-#1 - Gian L Cavalani
-[![N|Solid](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcsMAvnFlG7IZgYyxurkBY67137ZFRUmv7EUq-yRu8V-xbwGHXVbgDYAD9yHO0RUedyYs&usqp=CAU)](https://github.com/GianLCavalini)
+
+A página será recarregada quando você fizer alterações.\
+Você também pode ver erros de lint no console.
+
+**Tecnologias Usadas:**
+![](./src/images/javascrip.svg)
+
+
