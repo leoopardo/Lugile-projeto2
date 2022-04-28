@@ -13,7 +13,7 @@ export function Product() {
             setItens(response.data);
           }
           getItens()
-        }, [])
+        }, [params.prod])
         
     return(
         <div>
