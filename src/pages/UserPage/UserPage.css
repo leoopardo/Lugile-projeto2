@@ -58,7 +58,6 @@
     background-color: #A404BE;
 }
 .boxCarrinho{
-    
     width: 400px;
 }
 .list{
@@ -80,6 +79,11 @@
 }
 
 @media screen and (min-width: 330px) and (max-width: 375px){
+    .loja{
+        margin-left: 2%;
+        width: 350px;
+        margin-top: 15px;
+    }
     .iten{
         width: 100px;
         height: 150px;
@@ -95,6 +99,9 @@
         width: 100px;
         margin-top: 15px;
       }
+      .boxCarrinho{
+        width: 100px;
+    }
     .productImg{
         height: 50px;
     }
@@ -103,6 +110,48 @@
     }
     .btnCad{
         height: 20px;
+    }
+    .userPage{
+        width: 350px;
+    }
+
+    
+}
+@media screen and (min-width: 375px) and (max-width: 400px){
+    .loja{
+        margin-left: 2%;
+        width: 350px;
+        margin-top: 15px;
+    }
+    .iten{
+        width: 100px;
+        height: 150px;
+        margin: 1%;    
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        margin-block-end: 1px;
+        margin-top: 5px;
+    }
+    .carrinho{
+        width: 100px;
+        margin-top: 15px;
+      }
+      .boxCarrinho{
+        width: 100px;
+    }
+    .productImg{
+        height: 50px;
+    }
+    .productTitle{
+        font-size: 10px;
+    }
+    .btnCad{
+        height: 20px;
+    }
+    .userPage{
+        width: 350px;
     }
 
     
