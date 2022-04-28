@@ -3,12 +3,16 @@
     color: white;
     background-color: #680179;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 1%;
     margin: 2%;
 }
 .productTitle{
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    
 }
 .productImg{
     height: 100px;
@@ -22,8 +26,9 @@
 }
 .iten{
     color: #680179;
-    background-color: white;
+    background-color: #E8F7EE;
     width: 250px;
+    height: 350px;
     margin: 5px;
     border: 1px solid black;
     border-radius: 5%;
@@ -31,7 +36,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
+.product {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .divCarrinho{
     position:relative;
     margin-right: 5%;

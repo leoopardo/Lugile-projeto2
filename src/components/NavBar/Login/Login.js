@@ -27,26 +27,27 @@ export function Login() {
   
         return ( 
 
+        <div className="fundo">
+            <div className="Body" >
+                <form className="Form" onSubmit={handleSubmit} >    
+                <h1 className="titulo">Login</h1>  
 
-        <div className="Body" >
-            <form className="Form" onSubmit={handleSubmit} >    
-            <h1 className="titulo">Login</h1>  
-
-                <input className="Input1"
-                    name="name"
-                    type="text"
-                    placeholder="Nome"
-                    />
-                
-                <input className="Input2"
-                    name="password"
-                    type="password"
-                    placeholder="Senha"
-                    value={password}
-                    onChange={(e)=> setPassword(e.target.value)}
-                /> 
-                <button className="Button" type="submit"> Entrar </button> 
-            </form>
+                    <input className="Input1"
+                        name="name"
+                        type="text"
+                        placeholder="Nome"
+                        />
+                    
+                    <input className="Input2"
+                        name="password"
+                        type="password"
+                        placeholder="Senha"
+                        value={password}
+                        onChange={(e)=> setPassword(e.target.value)}
+                    /> 
+                    <button className="Button" type="submit"> Entrar </button> 
+                </form>
+            </div>
         </div>      
         )
     };            

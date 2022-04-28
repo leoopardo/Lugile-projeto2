@@ -3,7 +3,6 @@ import axios from 'axios';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { NavBar } from './components/NavBar/NavBar';
 import {Home} from "./pages/Home/Home"
-import {Product} from "./pages/Product/Product"
 import { useState, useEffect } from "react"
 import { Login } from './components/NavBar/Login/Login';
 import {Cadastro} from "./components/NavBar/Cadastro/Cadastro"
@@ -46,8 +45,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path='/login' element={<Login />}/>
             <Route path='/cadastro' element={<Cadastro />}/>
-            <Route path="/produto/:prod" element={<Product/>}/>
-            <Route path='/filtredHome' element={<FiltredHome itens={itens}/>}/>
+            <Route path='/filteredHome' element={<FiltredHome itens={itens}/>}/>
             <Route path='/userpage/:id' element={<UserPage itens={itens} />} />
             <Route path='/perfil/:id' element={<Perfil />} />
         </Routes>

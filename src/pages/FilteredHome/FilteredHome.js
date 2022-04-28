@@ -9,7 +9,7 @@ export function FiltredHome(props) {
             {props.itens.map((currentItem) => {
                 return (
                     <article className="itemFH">
-                        <Link to="/Product" className="linkFH">
+                        <Link to="/filteredHome" className="linkFH">
                             <h1 className="title">{currentItem.title}</h1>
                             <img src={currentItem.image} alt={currentItem.title} className="imgFH"/>
                             <p className="preço"> Preço: ${currentItem.price}</p>
