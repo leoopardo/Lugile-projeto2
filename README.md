@@ -1,13 +1,11 @@
 # Lugile Store
 
-![](../Lugile-projeto2/src/images/logo.png)
-
-## Lugile
+![](./src/images/logo.png)
 
 Lugile Store é um site de pesquisa de produtos que simula o processo de pesquisa, cadastro e login bem como a experiência de um usuário de navegar dentro de uma página  de compra na internet.
 
 
-# Para desenvolvedores
+## Para desenvolvedores
 
 Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
