@@ -27,12 +27,12 @@ export function Cadastro() {
     return ( 
         <form className="Body" onSubmit={handleSubmit} >
             <div className="Form" >
-                    <h1>Digite seus dados</h1>
+                    <h1 className="titulo">Digite seus dados</h1>
 
                     <input className="Input1"
                     name="name"
                     type="text"
-                    placeholder="nome"
+                    placeholder="Nome"
                     onChange={handleChange}
                     />
 
@@ -40,28 +40,28 @@ export function Cadastro() {
                     <input className="Input2"
                     name="password"
                     type="password"
-                    placeholder="senha"
+                    placeholder="Senha"
                     onChange={handleChange}
                     />
 
                      <input className="Input3"
                     name="endereço"
                     type="text"
-                    placeholder="endereço"
+                    placeholder=" Endereço"
                     onChange={handleChange}
                     />
 
                      <input className="Input4"
                     name="telefone"
                     type="text"
-                    placeholder="telefone"
+                    placeholder=" Telefone"
                     onChange={handleChange}
                     />
 
                      <input className="Input5"
                     name="email"
                     type="text"
-                    placeholder="email"
+                    placeholder=" Email"
                     onChange={handleChange}
                     />
 

@@ -30,7 +30,7 @@ export function Login() {
 
         <div className="Body" >
             <form className="Form" onSubmit={handleSubmit} >    
-            <h1>Login</h1>  
+            <h1 className="titulo">Login</h1>  
 
                 <input className="Input1"
                     name="name"

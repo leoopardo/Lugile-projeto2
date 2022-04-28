@@ -1,16 +1,22 @@
 .Body{
-    margin-block-end: 100px;
+    margin-block-end: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.titulo {
+    background-color: white ;
+}
 
 .Form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    width: 400px;
     justify-content: center;
-    margin: 100px;
-    border-color: black;
+    border: #A404BE solid;
+    box-shadow: 0 0 1em #1e1e1e; 
+    border-radius: 15px;  
     color: black;
     margin-top: 75px;
     margin-left: 40%;
@@ -24,22 +30,22 @@
 
 .Input1{
     display: flex;
-    padding: 10px;
+    
     height: 50px;
     width: 300px;
-    margin-block-end: 40px;
+    
     font-size: 20px;
     text-align:start;
-    margin-top: 75px;
+    margin-top: 50px;
     border-radius: 5px;
 }
 
 .Input2{
     display: flex;
-    padding: 10px;
+    
     height: 50px;
     width: 300px;
-    margin-block-end: 40px;
+    margin-bottom: 15px;
     font-size: 20px;
     text-align:start;
     margin-top: 20px;
@@ -49,10 +55,10 @@
 
 .Input3{
     display: flex;
-    padding: 10px;
+    
     height: 50px;
     width: 300px;
-    margin-block-end: 40px;
+    margin-bottom: 15px;
     font-size: 20px;
     text-align:start;
     margin-top: 20px;
@@ -61,10 +67,10 @@
 }
 .Input4{
     display: flex;
-    padding: 10px;
+
     height: 50px;
     width: 300px;
-    margin-block-end: 40px;
+    margin-bottom: 15px;
     font-size: 20px;
     text-align:start;
     margin-top: 20px;
@@ -76,10 +82,10 @@
 
 .Input5{
     display: flex;
-    padding: 10px;
+    margin-bottom: 15px;
     height: 50px;
     width: 300px;
-    margin-block-end: 50px;
+    
     font-size: 20px;
     text-align:start;
     margin-top: 20px;
@@ -89,13 +95,14 @@
 
 .Button{
     display: flex;
-    padding: 10px;
+  
     width: 150px;
     height: 50px;
     font-size: 20px;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
 
 }
