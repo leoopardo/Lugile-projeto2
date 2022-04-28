@@ -2,22 +2,25 @@
 
 ![](./src/images/logo.png)
 
+**Sobre:**
 Lugile Store é um site de pesquisa de produtos que simula o processo de pesquisa, cadastro e login bem como a experiência de um usuário de navegar dentro de uma página  de compra na internet.
+
+
 
 
 ## Para desenvolvedores
 
 Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Comandos disponíveis
+**Comandos disponíveis**
 
 No terminal de seu diretório digite os seguintes comandos:
 
-## `npm install`
+**`npm install`**
 
 Responsavel por instalar todas as dependências e rodar o app em sua máquina.
 
-### `npm start`
+**`npm start`**
 
 
 Executa o aplicativo no modo de desenvolvimento.\
