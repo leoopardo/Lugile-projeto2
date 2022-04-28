@@ -38,8 +38,9 @@ export function Perfil() {
 
 
     return (
-        <div >
+        <div className="containerPerfil">
             <form className="Form"  onSubmit={handleSubmit}>
+                <h1 className="tituloPerfil">Perfil do usuário</h1>
                 <label className="Label" htmlFor="inputName">Nome:</label>
                 <input className="Input"
                 id="inputName"
@@ -80,10 +81,10 @@ export function Perfil() {
                 value={cadastro.email}
                 onChange={handleChange}
                 />
-
-                <button  className="Btn1" type="submit">Fazer alterações</button>
-                <button className="Btn2" onClick={handleDelete} >Deletar</button>
-
+                <div className="btnsPerfil">
+                    <button  className="Btn1" type="submit">Fazer alterações</button>
+                    <button className="Btn2" onClick={handleDelete} >Deletar</button>
+                </div>
             </form>
         </div>
     );
