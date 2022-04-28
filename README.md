@@ -1,6 +1,6 @@
 # Lugile Store
 
-![](./src/images/logo.png)
+![](./src/images/logo.readme.png)
 
 **Sobre:**
 Lugile Store é um site de pesquisa de produtos que simula o processo de pesquisa, cadastro e login bem como a experiência de um usuário de navegar dentro de uma página  de compra na internet.
