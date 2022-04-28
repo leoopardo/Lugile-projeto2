@@ -1,7 +1,7 @@
 # Lugile Store
 
 <p align="center" width="100%">
-    <img width="33%" src="./src/images/logo.readme.png"> 
+    [lugile]<img width="33%" src="./src/images/logo.readme.png">(lugile.netlify.app/) 
 </p>
 
 **Sobre:**
