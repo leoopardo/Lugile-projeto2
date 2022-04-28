@@ -15,7 +15,7 @@ export function NavBar(props) {
     
     return ( 
         <nav className="NavBar">
-            <img src={logo} alt="logo" className="logo"></img>
+            <Link to="/"><img src={logo} alt="logo" className="logo"></img></Link>
             <div>   
                 <div className="departamentos">
                         <Link to="/Product" className="link"><h2>Roupas Masculinas</h2></Link>

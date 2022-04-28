@@ -1,6 +1,5 @@
 .NavBar{
     height: 80px;
-    /*margin: 1% 1% 1% 1%;*/
     background-color: #A404BE;
     display: flex;
     justify-content: space-around;
@@ -34,6 +33,9 @@
     padding: 2px;
     width: 70px;
     cursor: pointer;
+    border: 2px solid;
+    padding: 0px;
+    background-color: white;
     }
 
 .departamentos{
@@ -82,7 +84,7 @@
 }
 
 .lupa {
-    height: 20px;
+    height: 27px;
 
 }
 

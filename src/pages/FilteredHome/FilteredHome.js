@@ -1,15 +1,19 @@
+import "./FilteredHome.css"
+import { Link } from "react-router-dom";
+
 export function FiltredHome(props) {
 
     return ( 
-        <div className="todos">
-            <div className="loja">
+        <div className="containerFH">
+            <div className="store">
             {props.itens.map((currentItem) => {
                 return (
-                    <article className="iten">
-                        <h1 className="productTitle">{currentItem.title}</h1>
-                        <img src={currentItem.image} alt={currentItem.title} className="productImg"/>
-                        <p>{currentItem.title}</p>
-                        <p> Preço: ${currentItem.price}</p>
+                    <article className="itemFH">
+                        <Link to="/Product" className="linkFH">
+                            <h1 className="title">{currentItem.title}</h1>
+                            <img src={currentItem.image} alt={currentItem.title} className="imgFH"/>
+                            <p className="preço"> Preço: ${currentItem.price}</p>
+                        </Link>
                     </article>
                 )
             })}
