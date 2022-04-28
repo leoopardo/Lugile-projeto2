@@ -85,8 +85,6 @@ export function Perfil() {
                 <button className="Btn2" onClick={handleDelete} >Deletar</button>
 
 
-                <button type="submit">Editar!</button>
-                <button onClick={handleDelete} >Deletar</button>
             </form>
         </div>
     );
