@@ -49,6 +49,9 @@
     position:relative;
     margin-right: 5%;
 }
+.carrinhoImg{
+    height: 50px;
+}
 .Button{
     font-weight: 600;
     font-size: 15px;
@@ -78,15 +81,15 @@
   margin-top: 15px;
 }
 
-@media screen and (min-width: 330px) and (max-width: 375px){
+@media screen and (min-width: 330px) and (max-width: 374px){
     .loja{
         margin-left: 2%;
-        width: 350px;
+        width: 370px;
         margin-top: 15px;
     }
     .iten{
         width: 100px;
-        height: 150px;
+        height: 180px;
         margin: 1%;    
     }
     .list{
@@ -94,6 +97,8 @@
         align-items: center;
         margin-block-end: 1px;
         margin-top: 5px;
+        font-size: 10px;
+        height: 140px;
     }
     .carrinho{
         width: 100px;
@@ -110,22 +115,30 @@
     }
     .btnCad{
         height: 20px;
+        width: 50px;
     }
     .userPage{
         width: 350px;
+    }
+    .Button{
+        font-weight: 600;
+        font-size: 12px;
+        width: 60px;
+        height: 20px;
+      
     }
 
     
 }
-@media screen and (min-width: 375px) and (max-width: 400px){
+@media screen and (min-width: 375px) and (max-width: 399px){
     .loja{
         margin-left: 2%;
-        width: 350px;
+        width: 380px;
         margin-top: 15px;
     }
     .iten{
         width: 100px;
-        height: 150px;
+        height: 180px;
         margin: 1%;    
     }
     .list{
@@ -133,6 +146,8 @@
         align-items: center;
         margin-block-end: 1px;
         margin-top: 5px;
+        font-size: 10px;
+        height: 130px;
     }
     .carrinho{
         width: 100px;
@@ -149,10 +164,74 @@
     }
     .btnCad{
         height: 20px;
+        width: 50px;
     }
     .userPage{
         width: 350px;
     }
+    .Button{
+        font-weight: 600;
+        font-size: 10px;
+        width: 80px;
+        height: 20px;
+      
+    }
+    .carrinhoImg{
+        height: 30px;
+    }
 
     
+}
+@media screen and (min-width: 400px) and (max-width: 500px){
+    .loja{
+        margin-left: 2%;
+        margin-top: 15px;
+    }
+    .iten{
+        width: 100px;
+        height: 170px;
+        margin: 1%;    
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        margin-block-end: 1px;
+        margin-top: 5px;
+        font-size: 12px;
+        height: 150px;
+    }
+    .carrinho{
+        width: 100px;
+        margin-top: 15px;
+      }
+      .boxCarrinho{
+        width: 100px;
+    }
+    .productImg{
+        height: 50px;
+    }
+    .productTitle{
+        font-size: 10px;
+    }
+    .btnCad{
+        height: 20px;
+        width: 50px;
+    }
+    .userPage{
+        width: 350px;
+    }
+    .todos{
+        width: 400px;
+    }
+    .product{
+        height: 50px;
+    }
+    .carrinhoImg{
+        height: 30px;
+    }
+    .Button{
+        width: 80px;
+        height: 25px;
+        font-size: 15px;
+    }
 }

@@ -49,7 +49,7 @@ export function Card() {
                     <div className="item" key={id}>
                         <Link to={`/filteredHome`}>
                             <div className="image"> 
-                                <img src={image} alt={title}></img> 
+                                <img src={image} alt={title} ></img> 
                             </div> </Link>
                     
                         <div className="info">
@@ -67,12 +67,12 @@ export function Card() {
                      <button onClick={handleRightBtn}><img src={setas} alt="Scrool Rigth"  className="setas"/></button>
                  </div>
                </div>
-
+               <div className="card2">
+                    <img src={sale} alt="Card Promo" className="cardPromo"></img>
+                </div>
                
             </section>
-            <div className="card2">
-                    <img src={sale} alt="Card Promo" className="cardPromo"></img>
-            </div>
+           
              
         </div>
     )
