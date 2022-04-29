@@ -1,7 +1,7 @@
 # Lugile Store
 
 <p align="center" width="100%">
-    <a href="https://lugile.netlify.app/"><img width="33%" src="./src/images/logo.readme.png"></a>
+    <a href="https://main--lugile.netlify.app/"><img width="33%" src="./src/images/logo.readme.png"></a>
 </p>
 
 **Sobre:**
@@ -50,6 +50,6 @@ Você também pode ver erros no console.
 
 ## Links
 
-[Clique aqui e visite a Lugile Store](https://lugile.netlify.app/)\
+[Clique aqui e visite a Lugile Store](https://main--lugile.netlify.app/)\
 [Apresentação](https://docs.google.com/presentation/d/1XXPlh_MS4WW3ixF5b4_C5j96s32q9UwuUWWtmwcr4gc/edit#slide=id.p)
 
