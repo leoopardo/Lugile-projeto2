@@ -1,11 +1,17 @@
 .Body{
     margin-block-end: 50px;
     display: flex;
+
     align-items: center;
     justify-content: center;
 }
 .fundoCad{
     height: 820px;
+}
+.fundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .titulo {
     background-color: white ;

@@ -135,3 +135,33 @@ h1{
 .preço {
     text-decoration: none;
 }
+
+@media screen and (min-width: 330px) and (max-width: 374px){
+    .cardSale{
+        width: 360px;
+        height: 100px;
+    }
+    .carrImg{
+        height: 350px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 399px){
+    .cardSale{
+        width: 360px;
+        height: 120px;
+    }
+    .image{
+        height: 350px;
+        width: 10px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 500px){
+    .cardSale{
+        width: 410px;
+        height: 130px;
+    }
+    .image{
+        height: 350px;
+        width: 10px;
+    }
+}
