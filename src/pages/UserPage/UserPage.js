@@ -70,6 +70,7 @@ export function UserPage(props) {
                             </article>
                         </article>
                     );
+                    
                 })}; 
                 </div>
                 <ul className="carrinho">
